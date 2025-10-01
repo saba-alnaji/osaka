@@ -1,0 +1,9 @@
+:root{
+    --maincolor:#fd3172;
+}
+body{
+    height: 5000px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: var(--maincolor);
+}
