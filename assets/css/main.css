@@ -1,8 +1,13 @@
 :root{
-    --maincolor:#fd3172;
+    --maincolor:#ff206e;
+    --mainfont:  "Open Sans", sans-serif;
+}
+.text-main{
+    color: var(--maincolor);
 }
 body{
     height: 5000px;
+    font-family: var(--mainfont);
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
     color: var(--maincolor);
@@ -12,4 +17,22 @@ body{
 }
 .projects .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
     color:var(--maincolor);
+}
+.hero{
+    background-image:url('./../img/project/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.hero h1{
+    font-size: 48px;
+    font-weight: 800;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #222222;
+    transition: all .6s;
+}
+.icon:hover{
+    border: 1px solid #ffffff;
 }
