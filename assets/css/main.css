@@ -12,6 +12,21 @@ body{
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
     color: var(--maincolor);
 }
+.testimonials img{
+    width: 100px;
+    height: 100px;
+}
+.testimonials .carousel-indicators{
+    bottom: -50px;
+}
+.testimonials .carousel-indicators [data-bs-target]{
+    background-color: #d9d9d9;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.testimonials .carousel-indicators .active{
+    background-color: #000;}
 .projects .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
     color: green;
 }
