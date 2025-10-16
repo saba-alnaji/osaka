@@ -29,7 +29,7 @@ body{
     opacity: 0;
     animation-fill-mode: forwards;
 
-}
+} 
 @keyframes sideInLeft{
     from{
         transform: translate(-100%);
@@ -102,9 +102,37 @@ body{
 .icon:hover{
     border: 1px solid #ffffff;
 }
+
+.service-icon{
+    height: 50px;
+    width: 50px;
+}
+.services {
+    background-image: url('./../img/public/dark_dot.jpg');
+}
 .contact{
     background-image: url('./../img/public/dark_dot.jpg');
 }
+.service-icon svg path{
+    transition: fill .6s;
+}
+.service-card:hover .service-icon svg path{
+    fill: var(--maincolor);
+}
+
+
+.service-content h3::after {
+    content: "";
+    display: block;
+    margin: 12px auto 0 auto;
+    width: 40px;         
+    height: 2px;           
+    background: var(--maincolor); 
+}
+
+
+
+
 .contact .form-control{
     border: 0;
     border-bottom: 1px solid #eee;
